@@ -1,3 +1,1 @@
-#Сборка
-
-webpack add
+#link: https://paveldub.github.io/fre_repo/
