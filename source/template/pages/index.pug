@@ -1,0 +1,279 @@
+extends ../_template
+
+block variables
+  - var title = 'Index page'
+
+block content
+  .wrapper 
+    section.section.hero
+      .container
+        header.header
+          .header__left 
+            .header__logo 
+              a(href="#")
+                img(src="/assets/img/logo.png", alt="logo")
+            .header__text 
+              h3 Фонд
+              h4 Инвестиции в национальную экономику    
+          .header__right 
+            .header__phone 
+              .header__phone-text 
+                a(href="tel:88005510680") 8 (800) 551-06-80
+              .header__phone-img 
+                img(src="./assets/img/telephone.png", alt="phone number") 
+              .header__burger 
+                img(src="./assets/img/burger.png", alt="burger") 
+        nav.nav 
+          ul.nav__list 
+            li.nav__item 
+              a(href="#").nav__link О Компании  
+            li.nav__item 
+              a(href="#").nav__link Услуги 
+            li.nav__item 
+              a(href="#").nav__link Гарантии
+            li.nav__item 
+              a(href="#").nav__link FAQ
+            li.nav__item 
+              a(href="#").nav__link Новости
+            li.nav__item 
+              a(href="#").nav__link Проекты 
+            li.nav__item 
+              a(href="#").nav__link Контакты  
+        .content.swiper-container.s2
+          .swiper-wrapper
+            .content__wrapper.swiper-slide
+              .content__left
+                ul.content__left__list-slider
+                  li.content__left__item-slider
+                    .content__left-title 
+                      h1 Административное регулирование бизнеса
+                    .content__left-more 
+                      h3 Подробнее
+                      img(src="./assets/img/arrow-right-round.png", alt="read more")        
+              .content__right     
+                .content__right-logo 
+                  img(src="./assets/img/logo-big.png", alt="logo big")
+            .content__wrapper.swiper-slide
+              .content__left
+                ul.content__left__list-slider
+                  li.content__left__item-slider
+                    .content__left-title 
+                      h1 Административное регулирование бизнеса
+                    .content__left-more 
+                      h3 Подробнее
+                      img(src="./assets/img/arrow-right-round.png", alt="read more")        
+              .content__right     
+                .content__right-logo 
+                  img(src="./assets/img/logo-big.png", alt="logo big")    
+            .content__wrapper.swiper-slide
+              .content__left
+                ul.content__left__list-slider
+                  li.content__left__item-slider
+                    .content__left-title 
+                      h1 Административное регулирование бизнеса
+                    .content__left-more 
+                      h3 Подробнее
+                      img(src="./assets/img/arrow-right-round.png", alt="read more")        
+              .content__right     
+                .content__right-logo 
+                  img(src="./assets/img/logo-big.png", alt="logo big")        
+        .general-info
+          .general-info__left 
+            ul.general-info__list 
+              li.general-info__item 
+                a(href="#") Управленческий консалтинг
+                  i.sprite.sprite-arrow-right.sprite-arrow-brown
+              li.general-info__item 
+                a(href="#") Управленческий консалтинг
+                  i.sprite.sprite-arrow-right.sprite-arrow-brown
+              li.general-info__item 
+                a(href="#") Управленческий консалтинг
+                  i.sprite.sprite-arrow-right.sprite-arrow-brown
+              li.general-info__item 
+                a(href="#") Управленческий консалтинг
+                  i.sprite.sprite-arrow-right.sprite-arrow-brown
+              li.general-info__item 
+                a(href="#") Управленческий консалтинг  
+                  i.sprite.sprite-arrow-right.sprite-arrow-brown   
+          .general-info__right 
+            ul.general-info__list 
+              li.general-info__item 
+                a(href="#") Управленческий консалтинг
+                  i.sprite.sprite-arrow-right.sprite-arrow-brown   
+              li.general-info__item 
+                a(href="#") Управленческий консалтинг
+                  i.sprite.sprite-arrow-right.sprite-arrow-brown   
+              li.general-info__item 
+                a(href="#") Управленческий консалтинг
+                  i.sprite.sprite-arrow-right.sprite-arrow-brown   
+              li.general-info__item 
+                a(href="#") Управленческий консалтинг
+                  i.sprite.sprite-arrow-right.sprite-arrow-brown   
+              li.general-info__item 
+                a(href="#") Управленческий консалтинг
+                  i.sprite.sprite-arrow-right.sprite-arrow-brown   
+        section.news 
+          .container  
+            .news__title 
+              h3 Новости и события
+            .news__wrapper 
+              .news__top 
+                .news__top-data 
+                  h4 2 дня назад 
+                .news__top-title
+                  h3 Положительное разрешение проблемы должника 
+                .news__top-text 
+                  p Списание задолженности индивидуального предпринимателя по налогам и сборам  
+              .news__top 
+                .news__top-data 
+                  h4 2 дня назад 
+                .news__top-title
+                  h3 Положительное разрешение проблемы должника 
+                .news__top-text 
+                  p Списание задолженности индивидуального предпринимателя по налогам и сборам  
+              .news__top 
+                .news__top-data 
+                  h4 2 дня назад 
+                .news__top-title
+                  h3 Положительное разрешение проблемы должника 
+                .news__top-text 
+                  p Списание задолженности индивидуального предпринимателя по налогам и сборам          
+            .news__wrapper
+              .news__bottom   
+                  .news__bottom-data 
+                    h4 2 дня назад 
+                  .news__bottom-title
+                    h3 Положительное разрешение проблемы должника 
+                  .news__top-text 
+                    p Списание задолженности индивидуального предпринимателя по налогам и сборам  
+              .news__bottom  
+                  .news__bottom-data 
+                    h4 2 дня назад 
+                  .news__bottom-title
+                    h3 Положительное разрешение проблемы должника 
+                  .news__top-text 
+                    p Списание задолженности индивидуального предпринимателя по налогам и сборам
+              .news__bottom  
+                  .news__bottom-data 
+                    h4 2 дня назад 
+                  .news__bottom-title
+                    h3 Положительное разрешение проблемы должника 
+                  .news__top-text 
+                    p Списание задолженности индивидуального предпринимателя по налогам и сборам  
+            .button 
+              a(href="#") Смотреть все     
+            .statistics-wrapper
+              .statistics__title 
+                h3 Наша статистика
+              .statistics
+                .statistics__left 
+                  ul.statistics__list 
+                    li.statistics__item 
+                      .statistics__round 
+                        h3 14
+                      .statistics__text 
+                        h3 Лет на рынке консалтинговых услуг
+                    li.statistics__item 
+                      .statistics__round 
+                        h3 22
+                      .statistics__text 
+                        h3 Лет на рынке консалтинговых услуг
+                    li.statistics__item 
+                      .statistics__round 
+                        h3 108
+                      .statistics__text 
+                        h3 Лет на рынке консалтинговых услуг
+                    li.statistics__item 
+                      .statistics__round 
+                        h3 377
+                      .statistics__text 
+                        h3 Лет на рынке консалтинговых услуг           
+                .statistics__right  
+                  ul.statistics__list 
+                    li.statistics__item 
+                      .statistics__round 
+                        h3 104
+                      .statistics__text 
+                        h3 Лет на рынке консалтинговых услуг
+                    li.statistics__item 
+                      .statistics__round 
+                        h3 341
+                      .statistics__text 
+                        h3 Лет на рынке консалтинговых услуг
+                    li.statistics__item 
+                      .statistics__round 
+                        h3 28
+                      .statistics__text 
+                        h3 Лет на рынке консалтинговых услуг
+                    li.statistics__item 
+                      .statistics__round 
+                        h3 15+ млн
+                      .statistics__text 
+                        h3 Лет на рынке консалтинговых услуг
+            .faq 
+              .faq__title 
+                h3 Вопросы и ответы
+              .acco 
+                ul.acco__list 
+                  li.acco__item.acco__item--border-top
+                    .acco__trigger
+                      a(href="#") За какой период надо предоставлять инспекторам документы
+                    .acco__content
+                      p Основополагающие правила проведения налоговых проверок выездного формата регламентируются Налоговым кодексом. Такие мероприятия направлены на проверку корректности и полноты начисления и уплаты налогоплательщиком обязательных платежей за определенный период времени.                
+                      p В соответствии с требованиями ныне действующего законодательства, при выездной проверке инспектор имеет право требовать документы за отрезок времени, не превышающий трех лет, предшествующих году проведения такой выездной проверки. При этом стоит учесть, что текущий год, в котором проводится проверка, в определении продолжительности этого периода не учитывается. Это общее регламентированное правило, которым должны руководствоваться как контролирующий фискальный орган, так и уполномоченные должностные лица проверяемого субъекта. В некоторых случаях в решении об осуществлении выездной проверки инспекторами указывается определенный период, за который необходимо предоставить документы, однако, он должен быть в рамках вышеописанного правила.
+                  li.acco__item 
+                    .acco__trigger
+                      a(href="#") За какой период надо предоставлять инспекторам документы
+                    .acco__content 
+                      p Основополагающие правила проведения налоговых проверок выездного формата регламентируются Налоговым кодексом. Такие мероприятия направлены на проверку корректности и полноты начисления и уплаты налогоплательщиком обязательных платежей за определенный период времени.                
+                      p В соответствии с требованиями ныне действующего законодательства, при выездной проверке инспектор имеет право требовать документы за отрезок времени, не превышающий трех лет, предшествующих году проведения такой выездной проверки. При этом стоит учесть, что текущий год, в котором проводится проверка, в определении продолжительности этого периода не учитывается. Это общее регламентированное правило, которым должны руководствоваться как контролирующий фискальный орган, так и уполномоченные должностные лица проверяемого субъекта. В некоторых случаях в решении об осуществлении выездной проверки инспекторами указывается определенный период, за который необходимо предоставить документы, однако, он должен быть в рамках вышеописанного правила.
+                  li.acco__item 
+                    .acco__trigger
+                      a(href="#") За какой период надо предоставлять инспекторам документы
+                    .acco__content 
+                      p Основополагающие правила проведения налоговых проверок выездного формата регламентируются Налоговым кодексом. Такие мероприятия направлены на проверку корректности и полноты начисления и уплаты налогоплательщиком обязательных платежей за определенный период времени.                
+                      p В соответствии с требованиями ныне действующего законодательства, при выездной проверке инспектор имеет право требовать документы за отрезок времени, не превышающий трех лет, предшествующих году проведения такой выездной проверки. При этом стоит учесть, что текущий год, в котором проводится проверка, в определении продолжительности этого периода не учитывается. Это общее регламентированное правило, которым должны руководствоваться как контролирующий фискальный орган, так и уполномоченные должностные лица проверяемого субъекта. В некоторых случаях в решении об осуществлении выездной проверки инспекторами указывается определенный период, за который необходимо предоставить документы, однако, он должен быть в рамках вышеописанного правила.
+                  li.acco__item 
+                    .acco__trigger
+                      a(href="#") За какой период надо предоставлять инспекторам документы
+                    .acco__content 
+                      p Основополагающие правила проведения налоговых проверок выездного формата регламентируются Налоговым кодексом. Такие мероприятия направлены на проверку корректности и полноты начисления и уплаты налогоплательщиком обязательных платежей за определенный период времени.                
+                      p В соответствии с требованиями ныне действующего законодательства, при выездной проверке инспектор имеет право требовать документы за отрезок времени, не превышающий трех лет, предшествующих году проведения такой выездной проверки. При этом стоит учесть, что текущий год, в котором проводится проверка, в определении продолжительности этого периода не учитывается. Это общее регламентированное правило, которым должны руководствоваться как контролирующий фискальный орган, так и уполномоченные должностные лица проверяемого субъекта. В некоторых случаях в решении об осуществлении выездной проверки инспекторами указывается определенный период, за который необходимо предоставить документы, однако, он должен быть в рамках вышеописанного правила.
+                  li.acco__item 
+                    .acco__trigger
+                      a(href="#") За какой период надо предоставлять инспекторам документы
+                    .acco__content 
+                      p Основополагающие правила проведения налоговых проверок выездного формата регламентируются Налоговым кодексом. Такие мероприятия направлены на проверку корректности и полноты начисления и уплаты налогоплательщиком обязательных платежей за определенный период времени.                
+                      p В соответствии с требованиями ныне действующего законодательства, при выездной проверке инспектор имеет право требовать документы за отрезок времени, не превышающий трех лет, предшествующих году проведения такой выездной проверки. При этом стоит учесть, что текущий год, в котором проводится проверка, в определении продолжительности этого периода не учитывается. Это общее регламентированное правило, которым должны руководствоваться как контролирующий фискальный орган, так и уполномоченные должностные лица проверяемого субъекта. В некоторых случаях в решении об осуществлении выездной проверки инспекторами указывается определенный период, за который необходимо предоставить документы, однако, он должен быть в рамках вышеописанного правила.                
+            .trust 
+              .trust__title 
+                h3 Нам доверяют          
+              .trust__wrapper.swiper-container.s2
+                ul.trust__list.swiper-wrapper 
+                  li.trust__item.swiper-slide
+                    img(src="./assets/img/trust-first-slide.png") 
+                  li.trust__item.swiper-slide
+                    img(src="./assets/img/trust-slide-fifth.png")   
+                  li.trust__item.swiper-slide 
+                    img(src="./assets/img/trust-slide-fourth.png")
+                  li.trust__item.swiper-slide 
+                    img(src="./assets/img/trust-slide-second.png")
+                  li.trust__item.swiper-slide 
+                    img(src="./assets/img/trust-slide-third.png")
+                  li.trust__item.swiper-slide
+                    img(src="./assets/img/trust-first-slide.png") 
+                  li.trust__item.swiper-slide
+                    img(src="./assets/img/trust-slide-fifth.png")   
+                  li.trust__item.swiper-slide 
+                    img(src="./assets/img/trust-slide-fourth.png")
+                  li.trust__item.swiper-slide 
+                    img(src="./assets/img/trust-slide-second.png")
+                  li.trust__item.swiper-slide 
+                    img(src="./assets/img/trust-slide-third.png")  
+                .swiper-pagination          
+            footer.footer 
+              .container
+                .footer__title 
+                  h3 © Фонд, Инвестиции, Все материалы данного сайта являются объектами авторского права
+                .footer__conditions
+                  a(href="#") Условия, правила и оговорки            
