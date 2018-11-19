@@ -1,0 +1,90 @@
+extends ../_template
+
+block variables
+  - var title = 'Guarantee page'
+
+block content
+  .wrapper 
+    section.section.contacts 
+      .container
+        include ../common/_header
+        nav.nav 
+          ul.nav__list 
+            li.nav__item 
+              a(href="#").nav__link О Компании  
+            li.nav__item 
+              a(href="#").nav__link Услуги 
+            li.nav__item
+              a(href="#").nav__link Гарантии
+            li.nav__item 
+              a(href="#").nav__link FAQ
+            li.nav__item 
+              a(href="#").nav__link Новости
+            li.nav__item 
+              a(href="#").nav__link Проекты 
+            li.nav__item.nav__item--active
+              a(href="#").nav__link Контакты
+        .breadcrumbs 
+            ul.breadcrumbs__list 
+                li.breadcrumbs__item 
+                    a(href="#") Главная
+                li.breadcrumbs__item 
+                    h4 Контакты
+        .contacts  
+            .contacts__title 
+                h1 Контакты 
+            .contacts__block 
+                .contacts__block-elem 
+                    ul.contacts__block-elem-list 
+                        li.contacts__block-elem-item 
+                            h3 427621, г. Москва, ул. Ленина, 27
+                        li.contacts__block-elem-item 
+                            a(href="tel:88005510680") 8 (800) 551-06-80 
+                .contacts__block-elem
+                    ul.contacts__block-elem-list 
+                        li.contacts__block-elem-item
+                            h4 Для физ. лиц
+                        li.contacts__block-elem-item
+                            h3 пн-пт: 09:00 - 18:00
+                        li.contacts__block-elem-item
+                            h3 сб: 10:00 - 15:00  
+                        li.contacts__block-elem-item
+                            h3 вс: выходной
+                            h4 без перерыва      
+                .contacts__block-elem
+                    ul.contacts__block-elem-list 
+                        li.contacts__block-elem-item
+                            h4 Для юр. лиц
+                        li.contacts__block-elem-item
+                            h3 пн-пт: 09:00 - 18:00
+                        li.contacts__block-elem-item
+                            h3 сб: 10:00 - 15:00  
+                        li.contacts__block-elem-item
+                            h3 вс: выходной
+                            h4 без перерыва            
+                .contacts__block-elem
+                    .contacts__block-elem-link 
+                        a(href="#") Распечатать карту
+                    .contacts__block-elem-link    
+                        a(href="#") обратная связь
+            .social-links 
+                ul.social-links__list 
+                    li.social-links__item 
+                        a(href="#").social-links__item-url 
+                            i.fa.fa-facebook(aria-hidden="true") 
+                    li.social-links__item 
+                        a(href="#").social-links__item-url  
+                            i.fa.fa-youtube(aria-hidden="true")
+                    li.social-links__item 
+                        a(href="#").social-links__item-url  
+                            i.fa.fa-instagram
+                    li.social-links__item 
+                        a(href="#").social-links__item-url  
+                            i.fa.fa-vk(aria-hidden="true")  
+        section.map-container
+            #map
+        include ../common/footer    
+                    
+
+     
+                                 

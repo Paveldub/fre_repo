@@ -1,0 +1,22 @@
+.news-block {
+
+    &__general {
+        width: 100%;
+    }
+
+    &__wrapper-slider {
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+    }
+
+    &__slider-item {
+        background: #562c37;
+        height: 355px;
+    }
+}
+
+.news__button {
+    text-align: center;
+}
+

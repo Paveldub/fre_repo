@@ -97,6 +97,16 @@ section {
 
     &__item {
         background: #562c37;
+        transition: background .35s ease-in-out;
+
+        &:hover {
+            background: #ebdebb;
+            color: #fff;
+        }
+    }
+
+    &__item--active {
+        background: #ebdebb;
     }
 
     &__link {
@@ -109,7 +119,7 @@ section {
         transiton: color .35s ease;
 
         &:hover {
-            color: #ebdebb;
+            color: #562c37;
         }
     }
 }

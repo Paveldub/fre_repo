@@ -1,0 +1,101 @@
+extends ../_template
+
+block variables
+  - var title = 'News page'
+
+block content
+  .wrapper 
+    section.section.contacts 
+      .container
+        include ../common/_header
+        nav.nav 
+          ul.nav__list 
+            li.nav__item 
+              a(href="#").nav__link О Компании  
+            li.nav__item 
+              a(href="#").nav__link Услуги 
+            li.nav__item
+              a(href="#").nav__link Гарантии
+            li.nav__item 
+              a(href="#").nav__link FAQ
+            li.nav__item.nav__item--active 
+              a(href="#").nav__link Новости
+            li.nav__item 
+              a(href="#").nav__link Проекты 
+            li.nav__item
+              a(href="#").nav__link Контакты
+        .breadcrumbs 
+            ul.breadcrumbs__list 
+                li.breadcrumbs__item 
+                    a(href="#") Главная
+                li.breadcrumbs__item 
+                    h4 Новости
+        .news-block
+            .news-block__title 
+                h1 Новости
+            .news-block__general
+                .news-block__wrapper-slider.swiper-container.s3
+                    ul.news-block__slider-list.swiper-wrapper 
+                        li.news-block__slider-item.swiper-slide
+                            .news-block__slider-date 
+                                h4 2 дня назад 
+                            .news-block__slider-title 
+                                h2 Списание задолженности индивидуального предпринимателя по налогам и сборам  
+                        li.news-block__slider-item.swiper-slide
+                            .news-block__slider-date 
+                                h4 2 дня назад 
+                            .news-block__slider-title 
+                                h2 Списание задолженности индивидуального предпринимателя по налогам и сборам 
+                        li.news-block__slider-item.swiper-slide
+                            .news-block__slider-date 
+                                h4 2 дня назад 
+                            .news-block__slider-title 
+                                h2 Списание задолженности индивидуального предпринимателя по налогам и сборам  
+        .news 
+            .news__wrapper 
+              .news__top 
+                .news__top-data 
+                  h4 2 дня назад 
+                .news__top-title
+                  h3 Положительное разрешение проблемы должника 
+                .news__top-text 
+                  p Списание задолженности индивидуального предпринимателя по налогам и сборам  
+              .news__top 
+                .news__top-data 
+                  h4 2 дня назад 
+                .news__top-title
+                  h3 Положительное разрешение проблемы должника 
+                .news__top-text 
+                  p Списание задолженности индивидуального предпринимателя по налогам и сборам  
+              .news__top 
+                .news__top-data 
+                  h4 2 дня назад 
+                .news__top-title
+                  h3 Положительное разрешение проблемы должника 
+                .news__top-text 
+                  p Списание задолженности индивидуального предпринимателя по налогам и сборам          
+            .news__wrapper
+                .news__bottom   
+                  .news__bottom-data 
+                    h4 2 дня назад 
+                  .news__bottom-title
+                    h3 Положительное разрешение проблемы должника 
+                  .news__top-text 
+                    p Списание задолженности индивидуального предпринимателя по налогам и сборам  
+                .news__bottom  
+                  .news__bottom-data 
+                    h4 2 дня назад 
+                  .news__bottom-title
+                    h3 Положительное разрешение проблемы должника 
+                  .news__top-text 
+                    p Списание задолженности индивидуального предпринимателя по налогам и сборам
+                .news__bottom  
+                  .news__bottom-data 
+                    h4 2 дня назад 
+                  .news__bottom-title
+                    h3 Положительное разрешение проблемы должника 
+                  .news__top-text 
+                    p Списание задолженности индивидуального предпринимателя по налогам и сборам 
+            .news__button 
+                a(href="#") Показать все
+

@@ -7,38 +7,8 @@ block content
   .wrapper 
     section.section.hero
       .container
-        header.header
-          .header__left 
-            .header__logo 
-              a(href="#")
-                img(src="/assets/img/logo.png", alt="logo")
-            .header__text 
-              h3 Фонд
-              h4 Инвестиции в национальную экономику    
-          .header__right 
-            .header__phone 
-              .header__phone-text 
-                a(href="tel:88005510680") 8 (800) 551-06-80
-              .header__phone-img 
-                img(src="./assets/img/telephone.png", alt="phone number") 
-              .header__burger 
-                img(src="./assets/img/burger.png", alt="burger") 
-        nav.nav 
-          ul.nav__list 
-            li.nav__item 
-              a(href="#").nav__link О Компании  
-            li.nav__item 
-              a(href="#").nav__link Услуги 
-            li.nav__item 
-              a(href="#").nav__link Гарантии
-            li.nav__item 
-              a(href="#").nav__link FAQ
-            li.nav__item 
-              a(href="#").nav__link Новости
-            li.nav__item 
-              a(href="#").nav__link Проекты 
-            li.nav__item 
-              a(href="#").nav__link Контакты  
+        include ../common/_header
+        include ../common/nav  
         .content.swiper-container.s2
           .swiper-wrapper
             .content__wrapper.swiper-slide
@@ -245,35 +215,5 @@ block content
                     .acco__content 
                       p Основополагающие правила проведения налоговых проверок выездного формата регламентируются Налоговым кодексом. Такие мероприятия направлены на проверку корректности и полноты начисления и уплаты налогоплательщиком обязательных платежей за определенный период времени.                
                       p В соответствии с требованиями ныне действующего законодательства, при выездной проверке инспектор имеет право требовать документы за отрезок времени, не превышающий трех лет, предшествующих году проведения такой выездной проверки. При этом стоит учесть, что текущий год, в котором проводится проверка, в определении продолжительности этого периода не учитывается. Это общее регламентированное правило, которым должны руководствоваться как контролирующий фискальный орган, так и уполномоченные должностные лица проверяемого субъекта. В некоторых случаях в решении об осуществлении выездной проверки инспекторами указывается определенный период, за который необходимо предоставить документы, однако, он должен быть в рамках вышеописанного правила.                
-            .trust 
-              .trust__title 
-                h3 Нам доверяют          
-              .trust__wrapper.swiper-container.s2
-                ul.trust__list.swiper-wrapper 
-                  li.trust__item.swiper-slide
-                    img(src="./assets/img/trust-first-slide.png") 
-                  li.trust__item.swiper-slide
-                    img(src="./assets/img/trust-slide-fifth.png")   
-                  li.trust__item.swiper-slide 
-                    img(src="./assets/img/trust-slide-fourth.png")
-                  li.trust__item.swiper-slide 
-                    img(src="./assets/img/trust-slide-second.png")
-                  li.trust__item.swiper-slide 
-                    img(src="./assets/img/trust-slide-third.png")
-                  li.trust__item.swiper-slide
-                    img(src="./assets/img/trust-first-slide.png") 
-                  li.trust__item.swiper-slide
-                    img(src="./assets/img/trust-slide-fifth.png")   
-                  li.trust__item.swiper-slide 
-                    img(src="./assets/img/trust-slide-fourth.png")
-                  li.trust__item.swiper-slide 
-                    img(src="./assets/img/trust-slide-second.png")
-                  li.trust__item.swiper-slide 
-                    img(src="./assets/img/trust-slide-third.png")  
-                .swiper-pagination          
-            footer.footer 
-              .container
-                .footer__title 
-                  h3 © Фонд, Инвестиции, Все материалы данного сайта являются объектами авторского права
-                .footer__conditions
-                  a(href="#") Условия, правила и оговорки            
+            include ../common/slider          
+            include ../common/footer         

@@ -1,0 +1,86 @@
+.guarantee {
+    background: #eee8d9;
+}
+
+.breadcrumbs {
+    margin-top: 40px;
+    margin-bottom: 70px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+
+        a {
+            text-decoration: none;
+            color: #562c36;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            @include proximaRegular;
+
+            &:after {
+                content: '/';
+                display: block;
+                font-size: 16px;
+                color: #562c36;
+                padding-left: 5px;
+                padding-right: 5px;
+                
+            }
+        }
+
+        h4 {
+            font-size: 16px;
+            color: #562c36;
+            @include proximaRegular;
+        }
+    }
+}
+
+
+.guarantee-block {
+    &__title  {
+        h1 {
+            font-size: 80px;
+            @include proximaBold;
+            color: #562c36;
+        }
+    }
+
+    &__left {
+        width: 49%;
+    }
+
+    &__right {
+        width: 49%;
+    }
+
+    &__left-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left-content {
+        p {
+            padding-bottom: 45px;
+            
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    &__general {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 285px;
+    }
+
+    &__right-wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
