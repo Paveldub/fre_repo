@@ -13,10 +13,144 @@
     &__slider-item {
         background: #562c37;
         height: 355px;
+        width: 100%;
+    }
+
+    &__title {
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 55px;
+            @include proximaBold;
+            color: #562c37;
+        }
     }
 }
 
 .news__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+
+    a {
+        padding: 20px 30px;
+        color: #fff;
+        text-decoration: none;
+        @include proximaRegular;
+        background: #562c37;
+        width: 15%;
+        transition: color .35s ease-in-out, background .35s ease-in-out;
+
+        &:hover {
+            color: #562c37;
+            background: #ebdebb
+        }
+    }
+}
+
+.footer-another {
+
+    &__top  {
+        width: 100%;
+        background: #562c37;
+    }
+
+    &__center {
+        width: 100%;
+        background: #562c37;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #78565f;
+        border-top: 1px solid #78565f;
+    }
+
+    &__center-phone {
+        display: flex;
+        align-items: center;
+
+        a {
+            color: #fff;
+            @include proximaBold;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-image: url('../img/phone-footer.png');
+            background-repeat: no-repeat;
+            margin-right: 20px;
+        }
+    }
+
+    &__center-address {
+        display: flex;
+        align-items: center;
+
+        h4 {
+            color: #fff;
+            @include proximaBold;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-image: url('../img/mark-footer.png');
+            background-repeat: no-repeat;
+            margin-right: 20px;
+        }
+    }
+
+    &__left {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__right {
+        width: 40%;
+    }
+
+    &__bottom {
+        width: 100%;
+        background: #562c37;
+    }
+
+    &__wrapper  {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__general-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        h3 {
+            color: #fff;
+            @include proximaRegular;
+            font-size: 16px;
+        }
+    }
+
+    &__conditions {
+        a {
+            color: #fff;
+            @include proximaRegular;
+            font-size: 16px;
+        }
+    }
 }
 

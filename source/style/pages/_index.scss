@@ -98,11 +98,29 @@ section {
     &__item {
         background: #562c37;
         transition: background .35s ease-in-out;
+        border-right: 1px solid #78565f;
+
+        &:last-child {
+            border-right: 0;
+        }
 
         &:hover {
             background: #ebdebb;
             color: #fff;
         }
+    }
+
+    &__item--width {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__item--border-left {
+        border-left: 1px solid #78565f;
+    }
+
+    &__item--border-right {
+        border-right: 1px solid #78565f !important;
     }
 
     &__item--active {
@@ -234,6 +252,10 @@ section {
 
 .news {
     margin-top: 120px;
+
+    &--margin {
+        margin-bottom: 430px;
+    }
 
     &__title {
         margin-bottom: 90px;

@@ -41,8 +41,30 @@
         border: 1px solid #562c37;
     }
 
+    &__item-url--color {
+        text-decoration: none;
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        color: #fff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        text-decoration: 0;
+        transition: .5s;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
     &__list {
         display: flex;
+    }
+
+    &__list--position {
+        display: flex;
+        justify-content: flex-end;
     }
 
     &__item {
