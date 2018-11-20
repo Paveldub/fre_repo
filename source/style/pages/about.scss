@@ -1,0 +1,47 @@
+.about {
+
+    width: 100%;
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+
+        margin-bottom: 50px;
+
+        h1 {
+            font-size: 80px;
+            @include proximaBold;
+            color: #562c36;
+            text-align: left;
+        }
+    }
+
+    &__content-left {
+        width: 49%;
+    }
+
+    &__content-right {
+        width: 49%;
+        text-align: right;
+    }
+
+    &__content-left-text {
+
+        p {
+            padding-bottom: 20px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+.statistics-wrapper--margin {
+
+    margin-top: 100px;
+}
