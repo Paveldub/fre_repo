@@ -1,116 +1,178 @@
-// var map;
-// function initMap() {
-//   var uluru = { lat: 49.588315, lng: 34.556482 };
-//   map = new google.maps.Map(document.getElementById('map'), {
-//     center: uluru,
-//     zoom: 16,
-//     scrollwheel: false,
-//     styles: [
-//     {
-//         "featureType": "administrative",
-//         "stylers": [
-//             {
-//                 "visibility": "off"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "poi",
-//         "stylers": [
-//             {
-//                 "visibility": "simplified"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "road",
-//         "elementType": "labels",
-//         "stylers": [
-//             {
-//                 "visibility": "simplified"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "water",
-//         "stylers": [
-//             {
-//                 "visibility": "simplified"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "transit",
-//         "stylers": [
-//             {
-//                 "visibility": "simplified"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "landscape",
-//         "stylers": [
-//             {
-//                 "visibility": "simplified"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "road.highway",
-//         "stylers": [
-//             {
-//                 "visibility": "off"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "road.local",
-//         "stylers": [
-//             {
-//                 "visibility": "on"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "road.highway",
-//         "elementType": "geometry",
-//         "stylers": [
-//             {
-//                 "visibility": "on"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "water",
-//         "stylers": [
-//             {
-//                 "color": "#84afa3"
-//             },
-//             {
-//                 "lightness": 52
-//             }
-//         ]
-//     },
-//     {
-//         "stylers": [
-//             {
-//                 "saturation": -17
-//             },
-//             {
-//                 "gamma": 0.36
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "transit.line",
-//         "elementType": "geometry",
-//         "stylers": [
-//             {
-//                 "color": "#3f518c"
-//             }
-//         ]
-//     }
-// ]
+var map;
+function initMap() { 
+  var uluru = { lat: 55.747294, lng: 37.626166 };
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: uluru,
+    zoom: 13,
+    scrollwheel: false,
+    styles: [
+    {
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "-100"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 65
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": "50"
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "-100"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": "30"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": "40"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#ffff00"
+            },
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -97
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    }
+]
 
-// });
-// // google.maps.event.addDomListener(window, 'load', initMap);
+  });
+  
+  let icons = {
+        position: {
+            icon: {
+                url: './assets/img/maps-and-flags.png',
+                size: new google.maps.Size(90, 90),
+                scaledsize: new google.maps.Size(60, 60)
+            }
+        },
+    };
+
+    let features = [{
+            position: new google.maps.LatLng(55.745036, 37.629749),
+            type: 'position',
+            contentString: 'First',
+            content: 'Come to Daddy'
+        },
+        {
+            position: new google.maps.LatLng(55.745036, 37.629749),
+            type: 'position',
+            contentString: 'Second',
+            content: 'Best burgers ever'
+        },
+        {
+            position: new google.maps.LatLng(55.745036, 37.629749),
+            type: 'logo',
+            contentString: 'Third',
+            content: 'We are here'
+        }
+    ];
+  
+  var infowindow = new google.maps.InfoWindow();
+  
+  features.forEach(feature => {
+    let  marker = new google.maps.Marker({
+      position: feature.position,
+      icon: icons[feature.type].icon,
+      map: map,
+      title: feature.contentString
+    });
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initMap);

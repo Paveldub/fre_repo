@@ -30,7 +30,7 @@ block content
                     a(href="#") Главная
                 li.breadcrumbs__item 
                     h4 Контакты
-        .contacts  
+        .contacts.contacts--margin-bottom  
             .contacts__title 
                 h1 Контакты 
             .contacts__block 
@@ -81,9 +81,14 @@ block content
                     li.social-links__item 
                         a(href="#").social-links__item-url  
                             i.fa.fa-vk(aria-hidden="true")  
-        section.map-container
-            #map
-        include ../common/footer    
+    section.map-container
+        #map
+    footer.footer
+              .container
+                .footer__title 
+                  h3 © Фонд, Инвестиции, Все материалы данного сайта являются объектами авторского права
+                .footer__conditions
+                  a(href="#") Условия, правила и оговорки      
                     
 
      

@@ -1,6 +1,10 @@
 .contacts  {
     background: #eee8d9;
 
+    &--margin-bottom {
+        margin-bottom: 50px
+    }
+
     &__title {
         margin-bottom: 70px;
 
@@ -76,7 +80,13 @@
     }
 }
 
+.map-container {
+    padding-bottom: 160px;
+    background: #eee8d9;
+}
+
 #map {
   height: 400px;
   width: 100%;
 }
+
