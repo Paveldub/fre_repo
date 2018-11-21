@@ -1,0 +1,54 @@
+.feedback-popup#feedbackPopup
+    .feedback-popup__content 
+        .feedback-popup__closeButton
+        .feedback-popup__title 
+            h2 Обратная связь
+        .feedback-popup__inputs 
+            form.feedback-popup__form 
+                .feedback-popup__form-wrapper
+                    .feedback-popup__form-left
+                        label.feedback-popup__label 
+                            .feedback-popup__wrapper
+                                .feedback-popup__heading 
+                                    h3 Ваше имя
+                                .feedback-popup__input
+                                    input(type="text" name="name" placeholder="Иван Иванов") 
+                                #nameError     
+                        label.feedback-popup__label 
+                            .feedback-popup__wrapper
+                                .feedback-popup__heading 
+                                    h3 Ваш Телефон
+                                .feedback-popup__input    
+                                    input(type="text" name="phone" placeholder="+7 ХХХ  ХХХ  ХХ  ХХ") 
+                                #phoneError      
+                        label.feedback-popup__label 
+                            .feedback-popup__wrapper
+                                .feedback-popup__heading 
+                                    h3 Ваш E-mail
+                                .feedback-popup__input    
+                                    input(type="text" name="email" placeholder="mail@mail.com")      
+                                #emailError    
+                    .feedback-popup__form-right
+                        label.feedback-popup__label 
+                            .feedback-popup__heading 
+                                h3 Ваше имя
+                            textarea(name="textarea").feedback-popup__textarea  
+                            #textAreaError
+                .feedback-popup__form-bottom
+                    .checkbox-wrapper
+                        label.checkbox__label 
+                            .checkbox-container
+                                input(type="checkbox" id="rememberMe")
+                                label(for="rememberMe" class="checkbox")
+                                label(for="rememberMe")
+                                    .checkbox-text 
+                                        h3 <span> Соглашаюсь</span> на обработку персональных данных
+                    .button-submit
+                        button(type="sumbit") Отправить
+
+
+
+
+                
+
+        

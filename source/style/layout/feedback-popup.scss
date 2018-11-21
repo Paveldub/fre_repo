@@ -1,0 +1,208 @@
+.feedback-popup {
+    position: fixed;
+    background-color: rgba(106, 110, 132, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s;
+    overflow: hidden;
+    z-index: 99;
+
+    &--active {
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__content {
+        background-color: #fff;
+        padding: 50px 55px;
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 rem(5px) rem(8px) 0 rgba(0, 0, 0, .2), 0 rem(7px) rem(20px) 0 rgba(0, 0, 0, .17);
+        animation-name: modalopen;
+        animation-duration: .6s;
+        position: relative;
+    }
+
+    &__closeButton {
+            position: absolute;
+            top: 0;
+            right: -35px;
+            background-image: url('../img/close.png');
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+    }
+
+    &__title  {
+        margin-bottom: 45px;
+
+        h2 {
+            font-size: 48px;
+            color: #562c36;
+            @include proximaBold;
+        }
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    &__form-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form-left {
+        width: 49%;
+    }
+
+    &__form-right {
+        width: 49%;
+    }
+
+    &__heading {
+
+        h3 {
+        font-size: 14px;
+        color: #333;
+        @include proximaBold;
+        padding-bottom: 6px;
+        }
+    }
+
+    &__wrapper {
+        padding-bottom: 20px;
+    }
+
+    &__input {
+
+        input {
+            border: 1px solid #ebebeb;
+            width: 100%;
+            padding: 15px 13px;
+            transition: border .35s easy-in-out;
+
+            &:focus {
+                border: 1px solid #562c36;;
+            }
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        resize: none;
+        border: 1px solid #ebebeb;
+        height: 235px;
+        outline: none;
+        padding: 15px 13px;
+        transition: border .35s easy-in-out;
+
+        &:focus {
+            border: 1px solid #562c36;
+        }
+    }
+
+    &__form-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.checkbox-wrapper {
+    position: relative;
+    width: 100%;
+
+ .checkbox-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 222px;
+    transform: translate(-50%, -50%);
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    label {
+        cursor: pointer;
+        margin-left: 7px;
+    }
+}
+
+.checkbox-container .checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #562c36;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 3px;
+        background: #fff;
+            
+        transform:translate(4px, 11px) rotate(-45deg);
+        transform-origin: left;
+        transition: all 150ms;
+        transition-delay: 0ms;
+    }
+    
+    &:before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 3px;
+        background: #fff;
+            
+        transform:translate(1px, 6px) rotate(45deg);
+        transform-origin: left;
+        transition: all 150ms;
+        transition-delay: 150ms;
+    }
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    & ~ .checkbox {
+        &:before {
+            width: 7px;
+            transition-delay: 0ms;
+        }
+        
+        &:after {
+            width: 13px;
+            transition-delay: 150ms;
+        }
+    }
+    }
+}
+
+.button-submit {
+
+    button {
+        border: none;
+        outline: none;
+        padding: 20px 50px;
+        background: #562c36;
+        color: #fff;
+        @include proximaRegular;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: transform .25s ease-in-out;
+
+        &:hover {
+            transform: translate(1px, 1px);
+        }
+    }
+}

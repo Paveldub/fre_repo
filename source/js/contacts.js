@@ -176,3 +176,21 @@ function initMap() {
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
+
+
+let feedbackButton = document.getElementById('feedback');
+let feedback = document.getElementById('feedbackPopup');
+let closeButton = document.querySelector('.feedback-popup__closeButton');
+let body = document.body;
+
+feedbackButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    feedback.classList.add('feedback-popup--active');
+    body.classList.add('body--active');
+});
+
+closeButton.addEventListener('click', () => {
+    feedback.classList.remove('feedback-popup--active');
+    body.classList.remove('body--active');
+});

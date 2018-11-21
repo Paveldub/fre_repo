@@ -1,6 +1,7 @@
 .contacts  {
     background: #eee8d9;
 
+
     &--margin-bottom {
         margin-bottom: 50px
     }
@@ -19,6 +20,33 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+    }
+
+    &__block-elem-link {
+        padding-bottom: 13px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        a {
+            padding: 20px 28px;
+            border: 1px solid #562c36;
+            text-decoration: none;
+            color: #562c37;
+            text-transform: uppercase;
+            text-align: center;
+            @include proximaRegular;
+        }
+    }
+
+    &__block-elem-link--color {
+        background: #562c37;
+
+        a {
+            color: #f7f0df;
+            @include proximaRegular;
+        }
     }
 
     &__block-elem {
