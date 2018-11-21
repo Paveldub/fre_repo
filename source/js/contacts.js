@@ -1,6 +1,6 @@
-var map;
+let map;
 function initMap() { 
-  var uluru = { lat: 55.747294, lng: 37.626166 };
+  let uluru = { lat: 55.747294, lng: 37.626166 };
   map = new google.maps.Map(document.getElementById('map'), {
     center: uluru,
     zoom: 13,
@@ -146,24 +146,11 @@ function initMap() {
     let features = [{
             position: new google.maps.LatLng(55.745036, 37.629749),
             type: 'position',
-            contentString: 'First',
-            content: 'Come to Daddy'
-        },
-        {
-            position: new google.maps.LatLng(55.745036, 37.629749),
-            type: 'position',
-            contentString: 'Second',
-            content: 'Best burgers ever'
-        },
-        {
-            position: new google.maps.LatLng(55.745036, 37.629749),
-            type: 'logo',
-            contentString: 'Third',
-            content: 'We are here'
+            contentString: 'First'
         }
     ];
   
-  var infowindow = new google.maps.InfoWindow();
+  let infowindow = new google.maps.InfoWindow();
   
   features.forEach(feature => {
     let  marker = new google.maps.Marker({
@@ -176,7 +163,6 @@ function initMap() {
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
-
 
 let feedbackButton = document.getElementById('feedback');
 let feedback = document.getElementById('feedbackPopup');

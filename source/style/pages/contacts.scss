@@ -22,6 +22,29 @@
         width: 100%;
     }
 
+    &__block-elem-item {
+        padding-bottom: 20px;
+
+        a {
+            color: #562c36;
+            @include proximaRegular;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        h3 {
+            color: #562c36;
+            @include proximaRegular;
+            font-size: 16px;
+        }
+
+        h4 {
+            color: #562c36;
+            @include proximaRegular;
+            font-size: 16px;
+        }
+    }
+
     &__block-elem-link {
         padding-bottom: 13px;
 
