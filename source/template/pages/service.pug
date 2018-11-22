@@ -1,7 +1,7 @@
 extends ../_template
 
 block variables
-  - var title = 'News page'
+  - var title = 'Service page'
 
 block content
   .wrapper 
@@ -32,3 +32,76 @@ block content
                     a(href="#") Услуги   
                 li.breadcrumbs__item 
                     h4 Административное регулирование бизнеса
+        .content-service
+          .content-service__title 
+            h1 Административное <br> регулирование  <br> бизнеса
+          .content-service__wrapper  
+            .content-service__left 
+              ul.content-service__list 
+                li.content-service__item 
+                  span 1.
+                  h3  Анализ и оценка рисков <br> ведения бизнеса
+                li.content-service__item 
+                  span 2.
+                  h3 АФХД (Анализ финансово<br>-хозяйственной<br> деятельности)
+                li.content-service__item 
+                  span 3.
+                  h3 Оптимизация <br> бизнес-процессов
+            .content-service__right     
+              ul.content-service__list 
+                li.content-service__item 
+                  span 4.
+                  h3 Подготовка правовых <br> заключений по всем <br> направлениям <br> бизнес-деятельности   
+                li.content-service__item 
+                  span 5.
+                  h3 Подготовка правовых заключений по всем направлениям бизнес-деятельности   
+          .content-service__text 
+            .content-service__text-left 
+              p Предусмотрены ли Законом о защите прав и иными законами потребителя гарантии качества бесплатных юридических услуг? Ответ: нет и никогда не были предусмотрены. Бесплатные услуги не являются предметом регулирования Закона о защите прав потребителей, т.к. Закон о защите прав потребителей регулирует оказание платных услуг гражданам РФ.
+            .content-service__text-right
+              p Какие организации в обязательном порядке оказывают бесплатные юридические услуги определенной Законом о бесплатной юридической помощи категории граждан? Ответ: частные адвокаты, адвокатские бюро, адвокатские коллегии, адвокатские кабинеты, юридические клиники.       
+          .recommendation
+            .recommendation__title 
+              h3 Рекомендуем почитать
+            .news__wrapper 
+              .news__top 
+                .news__top-data 
+                  h4 2 дня назад 
+                .news__top-title
+                  h3 Положительное разрешение проблемы должника 
+                .news__top-text 
+                  p Списание задолженности индивидуального предпринимателя по налогам и сборам  
+              .news__top 
+                .news__top-data 
+                  h4 2 дня назад 
+                .news__top-title
+                  h3 Положительное разрешение проблемы должника 
+                .news__top-text 
+                  p Списание задолженности индивидуального предпринимателя по налогам и сборам  
+              .news__top 
+                .news__top-data 
+                  h4 2 дня назад 
+                .news__top-title
+                  h3 Положительное разрешение проблемы должника 
+                .news__top-text 
+                  p Списание задолженности индивидуального предпринимателя по налогам и сборам   
+          .callback 
+            .callback__title 
+              h3 Заказать обратный звонок
+            form.callback__form#formData
+                .callback__form-input 
+                  input(type="text" name="name" placeholder="Ваше имя")
+                  #nameError
+                .callback__form-input 
+                  input(type="text" name="phone" placeholder="Телефон")
+                  #phoneError
+                .callback__form-input 
+                  input(type="email" name="email" placeholder="Email")    
+                  #emailError
+                label.callback__label  
+                  .callback__form-title
+                    h3 Согласен с условиями и правилами
+                  .callback__form-checkbox 
+                    input(type="checkbox" name="checkbox")  
+                .button-submit
+                  button(type="submit").button-submit--width Отправить    

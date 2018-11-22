@@ -1,0 +1,89 @@
+.content-service {
+    width: 100%;
+
+    &__title {
+        h1 {
+            font-size: 80px;
+            @include proximaBold;
+            color: #562c36;
+            text-align: left;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 140px;
+    }
+
+    &__left {
+        width: 49%;
+    }
+
+    &__right {
+        width: 49%;
+    }
+
+    &__list {
+        height: 349px;
+    }
+
+    &__item  {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        height: 108px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-size: 24px;
+            @include proximaBold;
+            color: #562c36;
+            width: 400px;
+        }
+
+        span {
+            font-size: 35px;
+            @include proximaBold;
+            color: #562c36;
+        }
+    }
+
+    &__text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 120px;
+        margin-bottom: 130px;
+    }
+
+    &__text-left {
+        width: 49%;
+    }
+
+    &__text-right {
+        width: 49%;
+    }
+}
+
+.recommendation {
+    margin-bottom: 175px;
+
+    &__title {
+        margin-bottom: 90px;
+
+        h3 {
+            font-size: 30px;
+            @include proximaRegular;
+            color: #333;
+        }
+    }
+}
+
+.button-submit--width {
+    width: 100%;
+}
