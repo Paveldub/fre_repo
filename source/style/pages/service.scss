@@ -2,11 +2,35 @@
     width: 100%;
 
     &__title {
+        margin-bottom: 75px;
+
         h1 {
             font-size: 80px;
             @include proximaBold;
             color: #562c36;
             text-align: left;
+        }
+    }
+
+    &__side-title {
+        margin-bottom: 65px;
+        h3 {
+           font-size: 18px;
+           @include proximaBold;
+           color: #562c36;
+        }
+    }
+
+    &__side-wrapper {
+        margin-bottom: 115px;
+    }
+
+    &__side-text {
+
+        p {
+            font-size: 16px;
+            color: #333;
+            @include proximaRegular;
         }
     }
 
@@ -90,4 +114,110 @@
 
 .callback {
     margin-bottom: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        margin-bottom: 55px;
+        
+        h3 {
+            font-size: 30px;
+            color: #333333;
+            @include proximaRegular;
+        }
+    }
+
+    &__form {
+        width: 540px;
+    }
+
+    &__form-input {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        input {
+            border: 1px solid #ebebeb;
+            width: 100%;
+            padding: 15px 13px;
+            transition: border .35s easy-in-out;
+        }
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__form-checkbox {
+        order: -1;
+        margin-right: 15px;
+    }
+
+   
+}
+
+.content-service__center-block {
+    background-image: url('../img/middle-layer.png');
+    background-repeat: no-repeat;
+    transform: translateY(-50px);
+}
+
+.content-service__left-side {
+    width: 32%;
+}
+
+.content-service__center-side {
+    width: 32%;
+}
+
+.content-service__right-side {
+    width: 32%;
+}
+
+.content-service__general {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-service--margin-bottom {
+    margin-bottom: 280px;
+}
+
+.content-service__center-block {
+    padding: 75px 40px;
+}
+
+.content-service__center-title {
+    margin-bottom: 40px;
+    h3 {
+        font-size: 18px;
+        @include proximaRegular;
+        color: #dbccad;
+        line-height: 1.6;
+    }
+}
+
+.content-service__center-text {
+    margin-bottom: 60px;
+
+    p {
+        font-size: 16px;
+        @include proximaRegular;
+        color: #9e8b8f;
+    }
+}
+
+.content-service__center-heading {
+
+    h3 {
+        font-size: 16px;
+        color: #fff;
+        @include proximaRegular;
+    }
 }
