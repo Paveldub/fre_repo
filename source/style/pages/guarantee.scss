@@ -43,6 +43,8 @@
 
 .guarantee-block {
     &__title  {
+        margin-bottom: 70px;
+
         h1 {
             font-size: 80px;
             @include proximaBold;
@@ -58,14 +60,53 @@
         width: 49%;
     }
 
+    &__right-side {
+        width: 50%;
+        margin-left: 70px;
+
+        h3 {
+            font-size: 24px;
+            @include proximaBold;
+            color: #562c36;
+        }
+    }
+
+    &__right-side {
+        width: 50%;
+        margin-left: 70px;
+
+        h3 {
+            font-size: 24px;
+            @include proximaBold;
+            color: #562c36;
+        }
+    }
+
     &__left-wrapper {
         display: flex;
         align-items: center;
+        margin-bottom: 70px;
     }
 
     &__left-content {
         p {
             padding-bottom: 45px;
+            font-size: 16px;
+            @include proximaRegular;
+            color: #333;
+            
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    &__right-content {
+        p {
+            padding-bottom: 45px;
+            font-size: 16px;
+            @include proximaRegular;
+            color: #333;
             
             &:last-child {
                 padding-bottom: 0;
@@ -82,5 +123,14 @@
     &__right-wrapper {
         display: flex;
         align-items: center;
+        margin-bottom: 70px;
+    }
+
+    &__left-side {
+
+        img {
+            width: 133px;
+            height: 144px;
+        }
     }
 }
