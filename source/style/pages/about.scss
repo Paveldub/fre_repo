@@ -27,12 +27,43 @@
     &__content-right {
         width: 49%;
         text-align: right;
+        position: relative;
     }
+
+   &__content-right-video {
+
+    img {
+        position: relative;
+    }
+}
+
+   &__content-right-play {
+       position: absolute;
+       top: 50%;
+       left: 60%;
+       transform: translate(-50%, -50%);
+   }
+
+   &__content-right-text-block {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+
+    h3 {
+        color: #fff;
+        @include proximaRegular;
+        font-size: 16px;
+    }
+   }
 
     &__content-left-text {
 
         p {
             padding-bottom: 20px;
+            @include proximaRegular;
+            font-size: 16px;
+            color: #333;
 
             &:last-child {
                 padding-bottom: 0;

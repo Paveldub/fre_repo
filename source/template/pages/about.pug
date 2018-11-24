@@ -5,7 +5,7 @@ block variables
 
 block content
   .wrapper 
-    section.section.contacts 
+    section.section.hero
       .container
         include ../common/_header
         nav.nav 
@@ -40,8 +40,12 @@ block content
                             p В соответствии с требованиями ныне действующего законодательства, при выездной проверке инспектор имеет право требовать документы за отрезок времени, не превышающий трех лет, предшествующих году проведения такой выездной проверки. При этом стоит учесть, что текущий год, в котором проводится проверка, в определении продолжительности этого периода не учитывается.
                 .about__content-right
                     a(href="#").about__content-right-link
-                            .about__content-right-video 
-                                img(src="./assets/img/background-video.png")
+                      .about__content-right-video 
+                        img(src="./assets/img/background-video.png")
+                        .about__content-right-play 
+                          img(src="./assets/img/play-button.png")
+                        .about__content-right-text-block
+                          h3 Смотреть презентацию 
         .statistics-wrapper.statistics-wrapper--margin
               .statistics__title 
                 h3 Наша статистика

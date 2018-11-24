@@ -35,35 +35,43 @@ block content
                 h1 Контакты 
             .contacts__block 
                 .contacts__block-elem 
-                    ul.contacts__block-elem-list 
-                        li.contacts__block-elem-item 
+                    ul.contacts__block-elem-list.contacts__block-elem-list--padding-left
+                        li.contacts__block-elem-item-sign
                             h3 427621, г. Москва, ул. Ленина, 27
-                        li.contacts__block-elem-item 
+                        li.contacts__block-elem-item-phone
                             a(href="tel:88005510680") 8 (800) 551-06-80 
                 .contacts__block-elem
                     ul.contacts__block-elem-list 
                         li.contacts__block-elem-item
                             h4 Для физ. лиц
+                        li.contacts__block-elem-item    
+                            .contacts__block-elem-item-clocks
+                                i.fa.fa-clock-o
+                            h3 пн-пт: 
+                            h5 09:00 - 18:00
                         li.contacts__block-elem-item
-                            h3 пн-пт: 09:00 - 18:00
+                            h3 сб: 
+                            h6 10:00 - 15:00  
                         li.contacts__block-elem-item
-                            h3 сб: 10:00 - 15:00  
-                        li.contacts__block-elem-item
-                            h3 вс: выходной
-                            h4 без перерыва      
+                            h3 вс: 
+                            h2 выходной <br> без перерыва      
                 .contacts__block-elem
                     ul.contacts__block-elem-list 
                         li.contacts__block-elem-item
                             h4 Для юр. лиц
+                        li.contacts__block-elem-item    
+                            .contacts__block-elem-item-clocks
+                                i.fa.fa-clock-o
+                            h3 пн-пт: 
+                            h5 09:00 - 18:00
                         li.contacts__block-elem-item
-                            h3 пн-пт: 09:00 - 18:00
+                            h3 сб: 
+                            h6 10:00 - 15:00  
                         li.contacts__block-elem-item
-                            h3 сб: 10:00 - 15:00  
-                        li.contacts__block-elem-item
-                            h3 вс: выходной
-                            h4 без перерыва            
+                            h3 вс: 
+                            h2 выходной <br> без перерыва            
                 .contacts__block-elem
-                    .contacts__block-elem-link 
+                    .contacts__block-elem-link#print
                         a(href="#") Распечатать карту
                     .contacts__block-elem-link.contacts__block-elem-link--color#feedback    
                         a(href="#") обратная связь

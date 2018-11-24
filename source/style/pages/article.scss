@@ -9,6 +9,11 @@
 
     &__left-link  {
         width: 30%;
+        transition: transform .35s ease-in-out;
+
+        &:hover {
+            transform: translate(1px, 1px);
+        }
 
         a {
             text-decoration: none;
@@ -22,8 +27,8 @@
             transition: color .35s ease-in-out, background .35s ease-in-out;
 
             &:hover {
-                color: #562c37;
-                background: #ebdebb;
+                color: #fff;
+                background: #562c37
             }
         }
     }
@@ -38,6 +43,12 @@
     &__right-link {
         width: 40%;
 
+        transition: transform .35s ease-in-out;
+
+        &:hover {
+            transform: translate(1px, 1px);
+        }
+
         a {
             text-decoration: none;
             padding: 18px 25px;
@@ -49,8 +60,8 @@
             transition: color .35s ease-in-out, background .35s ease-in-out;
 
             &:hover {
-                color: #562c37;
-                background: #ebdebb;
+                color: #fff;
+                background: #562c37
             }
         }
     }

@@ -1,23 +1,27 @@
 .container {
     max-width: 1110px;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
 }
 
 section {
     height: 100%;
     width: 100%;
+    z-index: 10;
+}
+
+.section {
+    background-image: url("../img/background-image.png");
 }
 
 .wrapper {
     min-height: 100%;
     position: relative;
     width: 100%;
+    background-image: url("../img/money-back.png");
 }  
 
 .hero {
-    background: #eee8d9;
-    background-image: url('../img/background-image.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
     width: 100%;
@@ -507,10 +511,6 @@ section {
     &__list {
         height: 350px;
     }
-
-    &__item {
-        margin-left: -10px;
-    }
 }
 
 .swiper-container {
@@ -564,6 +564,12 @@ section {
 }
 
 .button {
+
+    transition: transform .35s ease-in-out;
+
+    &:hover {
+        transform: translate(1px, 1px);
+    }
 
         a {
             font-size: 14px;

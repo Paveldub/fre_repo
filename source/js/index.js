@@ -22,18 +22,21 @@ accoTrigger.forEach(function(item) {
 });
 
 // swiper slider main, first screen
-var swiper = new Swiper('.s1');
+var swiper = new Swiper('.s1', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    }
+});
+
 
 // swiper slider last
 var swiper = new Swiper('.s2', {
     slidesPerView: 5,
     spaceBetween: 30,
-    autoplay: {
-        delay: 3000,
-    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-    },
+    }
 });
 
