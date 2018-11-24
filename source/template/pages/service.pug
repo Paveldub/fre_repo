@@ -91,18 +91,23 @@ block content
             form.callback__form#formData
                 .callback__form-input 
                   input(type="text" name="name" placeholder="Ваше имя")
-                  #nameError
+                  span.border-elem
+                #nameError
                 .callback__form-input 
                   input(type="text" name="phone" placeholder="Телефон")
-                  #phoneError
+                  span.border-elem
+                #phoneError
                 .callback__form-input 
-                  input(type="email" name="email" placeholder="Email")    
-                  #emailError
+                  input(type="email" name="email" placeholder="Email")   
+                  span.border-elem
+                #emailError
                 label.callback__label  
                   .callback__form-title
                     h3 Согласен с условиями и правилами
                   .callback__form-checkbox 
-                    input(type="checkbox" name="checkbox")  
+                    input(type="checkbox" name="checkbox").checkbox  
+                    .checkbox-img
+                  #checkboxError  
                 .button-submit
                   button(type="submit").button-submit--width Отправить    
           include ../common/footer        
