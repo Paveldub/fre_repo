@@ -90,24 +90,25 @@ block content
               h3 Заказать обратный звонок
             form.callback__form#formData
                 .callback__form-input 
-                  input(type="text" name="name" placeholder="Ваше имя")
+                  input(type="text" name="nameInput" placeholder="Ваше имя")
                   span.border-elem
-                #nameError
+                #nameInputError
                 .callback__form-input 
-                  input(type="text" name="phone" placeholder="Телефон")
+                  input(type="text" name="phoneInput" placeholder="Телефон")#phoneInput
                   span.border-elem
-                #phoneError
+                #phoneInputError
                 .callback__form-input 
-                  input(type="email" name="email" placeholder="Email")   
+                  input(type="email" name="emailInput" placeholder="Email")   
                   span.border-elem
-                #emailError
-                label.callback__label  
-                  .callback__form-title
-                    h3 Согласен с условиями и правилами
-                  .callback__form-checkbox 
-                    input(type="checkbox" name="checkbox").checkbox  
-                    .checkbox-img
-                  #checkboxError  
+                #emailInputError
+                label.feedback-popup__label-checkbox.feedback-popup__label-checkbox--position
+                  .feedback-popup__label-checkbox-wrapper
+                    .feedback-popup__checkbox-input 
+                      input(type="checkbox" name="checkboxInput").feedback-popup__checkbox-elem
+                      .feedback-popup__checkbox-img  
+                    .feedback-popup__checkbox-title
+                      h3 Согласен с <span>условиями и правилами </span>
+                  #checkboxInputError  
                 .button-submit
                   button(type="submit").button-submit--width Отправить    
           include ../common/footer        

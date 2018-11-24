@@ -273,7 +273,6 @@ if(form) {
     
         xhr.send(params);
     });
-    
 }
 
 const phoneNumber = document.getElementById('phoneNumber');

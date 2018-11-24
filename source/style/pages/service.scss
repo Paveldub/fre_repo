@@ -87,10 +87,22 @@
 
     &__text-left {
         width: 49%;
+
+        p {
+            font-size: 16px;
+            @include proximaRegular;
+            color: #333;
+        }
     }
 
     &__text-right {
         width: 49%;
+
+        p {
+            font-size: 16px;
+            @include proximaRegular;
+            color: #333;
+        }
     }
 }
 
@@ -134,7 +146,6 @@
     }
 
     &__form-input {
-        margin-bottom: 30px;
         position: relative;
 
         &:last-child {
@@ -160,11 +171,26 @@
         position: relative;
     }
 
+    &__form-title {
+
+        h3 {
+            font-size: 16px;
+            color: #333;
+            @include proximaRegular;
+        }
+
+        span {
+            font-size: 16px;
+            color: #333;
+            @include proximaRegular;
+            text-decoration: underline;
+        }
+    }
+
     .checkbox {
         position: absolute;
         top: 0;
         left: -9999px;
-
     }
 
     .checkbox-img {
@@ -272,4 +298,51 @@
         color: #fff;
         @include proximaRegular;
     }
+}
+
+#nameInputError {
+    color: red;
+    font-family: ProximaRegular;
+    font-size: 16px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+#phoneInputError {
+    color: red;
+    font-family: ProximaRegular;
+    font-size: 16px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+#emailInputError {
+    color: red;
+    font-family: ProximaRegular;
+    font-size: 16px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+#checkboxInputError {
+    color: red;
+    font-family: ProximaRegular;
+    font-size: 16px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.button-submit {
+    transition: .35s ease-in-out;
+}
+
+.feedback-popup__label-checkbox--position {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
