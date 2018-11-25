@@ -1,6 +1,5 @@
 .contacts  {
-    background: #eee8d9;
-
+    // background: #eee8d9;
 
     &--margin-bottom {
         margin-bottom: 50px
@@ -20,12 +19,22 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        @include laptop {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__block-elem-item-phone{
         padding-bottom: 20px;
         display: flex;
         align-items: center;
+
+        @include tablets {
+            justify-content: center;
+            width: 100%;
+        }
 
         &:before {
             content: '';
@@ -97,6 +106,11 @@
         display: flex;
         align-items: flex-start;
 
+        @include tablets {
+            width: 100%;
+            justify-content: center;
+        }
+
         a {
             color: #562c36;
             @include proximaRegular;
@@ -121,6 +135,18 @@
         padding-bottom: 13px;
         transition: transform .35s ease-in-out;
 
+        @include laptop {
+            padding-bottom: 0;
+        }
+
+        @include tablets-600 {
+            margin-bottom: 30px;
+        }
+
+        @include phones {
+            width: 100%;
+        }
+
         &:hover {
             transform: translate(1px, 1px);
         }
@@ -137,6 +163,31 @@
             text-transform: uppercase;
             text-align: center;
             @include proximaRegular;
+            width: 266px;
+
+            @include phones {
+                width: 100%;
+            }
+        }
+    }
+
+    #feedback {
+        width: 266px;
+
+        @include phones {
+            width: 100%;
+        }
+    }
+
+    .contacts__block-elem--position {
+        @include laptop {
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+        }
+
+        @include tablets-600 {
+            flex-direction: column;
         }
     }
 
@@ -151,6 +202,16 @@
 
     &__block-elem {
         width: 24%;
+
+        @include laptop {
+            width: 100%;
+        }
+
+        @include tablets {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
@@ -176,6 +237,10 @@
         font-family: ProximaRegular;
         font-size: 16px;
         padding-left: 40px;
+
+        @include tablets {
+            padding-left: 28px;
+        }
     }
 }
 
@@ -188,6 +253,18 @@
 
 .contacts__block-elem-list {
     padding-left: 40px;
+
+    @include laptop {
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include tablets {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .contacts__block-elem-list--padding-left {
@@ -279,4 +356,22 @@
   height: 400px;
   width: 100%;
 }
+
+.social-links--display  {
+    @include laptop {
+        display: none;
+    }
+}
+
+.social-links--responsive  {
+    display: none; 
+
+    @include laptop {
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+}
+
+
 

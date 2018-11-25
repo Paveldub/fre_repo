@@ -107,10 +107,11 @@
   display: none!important; // for js
 }
 
+$base-font-size: 16px;
 // pixel to rem
-@function rem($px) {
-  @return $px / 16px+0rem;
-}
+@function px-to-rem ($target, $context: $base-font-size) {
+  @return ($target / $context) * 1rem;
+} 
 
 // screen sizes
 @mixin desktop {
@@ -196,6 +197,13 @@
   }
 }
 
+@mixin custom-1160px {
+  @media screen and (max-width: $custom1160) {
+    @content;
+  }
+}
+
+
 @mixin tablets {
 	@media screen and (max-width: 768px) {
 	@content;	
@@ -258,6 +266,18 @@
 // Galaxy
 @mixin galaxyS5-360 {
   @media screen and (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablets-600 {
+  @media screen and (max-width: 600px) {
     @content;
   }
 }

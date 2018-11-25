@@ -25,6 +25,12 @@ section {
     background-repeat: no-repeat;
     background-position: 50% 0;
     width: 100%;
+    transition: margin-left .7s;
+
+    &--active {
+        overflow: hidden;
+        margin-left: 250px;
+    }
 }
 
 .header {
@@ -46,6 +52,10 @@ section {
             color: #562c36;
             font-size: 18px;
         }
+
+        @include tablets {
+            display: none;
+        }
     }
 
     &__phone-text {
@@ -62,10 +72,21 @@ section {
         width: 50%;
         display: flex;
         align-items: center;
+
+        @include tablets {
+            width: 20%;
+        }
     }
 
     &__logo {
         margin-right: 40px;
+
+        img {
+            @include tablets {
+                width: 60px;
+                height: 60px;
+            }
+        }
     }
 
     &__right {
@@ -73,6 +94,10 @@ section {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+
+        @include tablets {
+            width: 80%;
+        }
     }
 
     &__phone {
@@ -86,10 +111,19 @@ section {
 
     &__phone-img {
         margin-right: 45px;
+
+        @include phones {
+            display: none;
+        }
     }
 
     &__burger {
-        cursor: pointer;
+
+        a {
+            cursor: pointer;
+            font-size: 20px;
+            color: #562c36;
+        }
     }
 }
 
@@ -97,12 +131,21 @@ section {
 
     &__list {
         display: flex;
+
+        @include custom-1160px {
+            flex-wrap: wrap;
+        }
+
+        @include tablets {
+            display: none;
+        }
     }
 
     &__item {
         background: #562c37;
         transition: background .35s ease-in-out;
         border-right: 1px solid #78565f;
+        min-width: 120px;
 
         &:last-child {
             border-right: 0;
@@ -157,10 +200,18 @@ section {
 
     &__left {
         width: 50%;
+
+        @include laptop {
+            width: 30%;
+        }
     }
 
     &__right {
         width: 50%;
+
+        @include laptop {
+            width: 70%;
+        }
     }
     
     &__left-title {
@@ -171,6 +222,18 @@ section {
             @include proximaBold;
             color: #562c36;
             text-align: left;
+
+            @include laptop {
+                font-size: 60px;
+            }
+
+            @include tablets-600 {
+                font-size: 40px;
+            }
+
+            @include phones {
+                font-size: 30px;
+            }
         }
     }
 
@@ -206,9 +269,17 @@ section {
     display: flex;
     justify-content: space-between;
 
+    @include tablets {
+        flex-direction: column;
+    }
+
 
     &__left {
         width: 49%;
+
+        @include tablets {
+            width: 100%;
+        }
     }
 
     &__item {
@@ -251,6 +322,11 @@ section {
 
     &__right {
         width: 49%;
+
+        @include tablets {
+            width: 100%;
+            margin-top: 30px;
+        }
     }
 }
 
@@ -259,6 +335,10 @@ section {
 
     &--margin {
         margin-bottom: 430px;
+
+        @include tablets {
+            margin-bottom: 500px;
+        }
     }
 
     &__title {
@@ -266,6 +346,22 @@ section {
         font-size: 30px;
         @include proximaRegular;
         color: #333333;
+    }
+
+    &__top {
+        margin-right: 10px;
+
+        @include tablets {
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__bottom {
+        margin-right: 10px;
+
+        @include tablets {
+            margin-bottom: 20px;
+        }
     }
 
     &__top-data {
@@ -281,6 +377,10 @@ section {
         display: flex;
         justify-content: space-between;
         margin-bottom: 90px;
+
+        @include tablets {
+            flex-direction: column;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -384,17 +484,34 @@ section {
     display: flex;
     justify-content: space-between;
 
+    @include tablets {
+        flex-direction: column;
+    }
+
     &__left {
         width: 50%;
+
+        @include tablets {
+            width: 100%;
+        }
     }
 
     &__right {
         width: 50%;
+
+        @include tablets {
+            margin-top: 30px;
+            width: 100%;
+        }
     }
 
     &__item {
         display: flex;
         align-items: center;
+
+        @include tablets {
+           justify-content: center;
+        }
     }
 
     &__round {
@@ -474,6 +591,10 @@ section {
                 width: 20px;
                 height: 20px;
                 background-repeat: no-repeat;
+
+                @include phones {
+                    width: 32px;
+                }
             }
         }
     }
@@ -577,12 +698,18 @@ section {
             color: #562c37;
             padding: 20px 30px;
             border: 1px solid #562c37;
-            width: 14%;
+            width: 155px;
             flex-shrink: 0;
             display: flex;
             transition: background .35s ease-in-out,
             color .35s ease-in-out;
+            white-space: nowrap;
             @include proximaRegular;
+
+            @include tablets {
+                width: 100%;
+                justify-content: center;
+            }
 
             &:hover {
                 background: #562c37;
@@ -613,6 +740,10 @@ section {
     &__title {
         padding-bottom: 25px;
 
+        @include phones {
+            text-align: center;
+        }
+
         h3 {
             font-size: 16px;
             @include proximaRegular;
@@ -622,10 +753,23 @@ section {
 
     &__conditions {
 
+        @include phones {
+            text-align: center;
+        }
+
         a {
             font-size: 16px;
             @include proximaRegular;
             color: #333;
         }
+    }
+}
+
+.burger-menu  {
+    display: none;
+
+    @include tablets {
+        display: block;
+        cursor: pointer;
     }
 }

@@ -9,21 +9,23 @@ block content
       .container
         include ../common/_header
         nav.nav 
-          ul.nav__list 
-            li.nav__item 
-              a(href="#").nav__link О Компании  
-            li.nav__item 
-              a(href="#").nav__link Услуги 
-            li.nav__item
-              a(href="#").nav__link Гарантии
-            li.nav__item 
-              a(href="#").nav__link FAQ
-            li.nav__item
-              a(href="#").nav__link Новости
-            li.nav__item 
-              a(href="#").nav__link Проекты 
-            li.nav__item
-              a(href="#").nav__link Контакты
+            .burger-menu 
+                img(src="/assets/img/burger.png")
+            ul.nav__list 
+                li.nav__item 
+                    a(href="#").nav__link О Компании  
+                li.nav__item 
+                    a(href="#").nav__link Услуги 
+                li.nav__item
+                    a(href="#").nav__link Гарантии
+                li.nav__item 
+                    a(href="#").nav__link FAQ
+                li.nav__item
+                    a(href="#").nav__link Новости
+                li.nav__item 
+                    a(href="#").nav__link Проекты 
+                li.nav__item
+                    a(href="#").nav__link Контакты
         .breadcrumbs 
             ul.breadcrumbs__list 
                 li.breadcrumbs__item 
@@ -102,4 +104,5 @@ block content
                   h3 Положительное разрешение проблемы должника 
                 .news__top-text 
                   p Списание задолженности индивидуального предпринимателя по налогам и сборам                                 
-        include ../common/footer                  
+        include ../common/footer   
+        include ../common/anim-side-bar                

@@ -9,21 +9,23 @@ block content
       .container
         include ../common/_header
         nav.nav 
-          ul.nav__list 
-            li.nav__item 
-              a(href="#").nav__link О Компании  
-            li.nav__item.nav__item--active  
-              a(href="#").nav__link Услуги 
-            li.nav__item
-              a(href="#").nav__link Гарантии
-            li.nav__item 
-              a(href="#").nav__link FAQ
-            li.nav__item
-              a(href="#").nav__link Новости
-            li.nav__item 
-              a(href="#").nav__link Проекты 
-            li.nav__item
-              a(href="#").nav__link Контакты
+            .burger-menu 
+                img(src="/assets/img/burger.png")
+            ul.nav__list 
+                li.nav__item 
+                    a(href="#").nav__link О Компании  
+                li.nav__item.nav__item--active  
+                    a(href="#").nav__link Услуги 
+                li.nav__item
+                    a(href="#").nav__link Гарантии
+                li.nav__item 
+                    a(href="#").nav__link FAQ
+                li.nav__item
+                    a(href="#").nav__link Новости
+                li.nav__item 
+                    a(href="#").nav__link Проекты 
+                li.nav__item
+                    a(href="#").nav__link Контакты
         .breadcrumbs 
             ul.breadcrumbs__list 
                 li.breadcrumbs__item 
@@ -62,7 +64,7 @@ block content
                             .content-service__center-heading 
                                 h3 Подробнее
                             .content-service__center-arrow 
-                                img(src="/assets/img/arrow-white.png")
+                                img(src="/assets/img/arr-white.png")
                             .content-service__side-wrapper
                     .content-service__side-title 
                         h3 Банкротство и ликвидация
@@ -84,4 +86,5 @@ block content
                             h3 Банкротство и ликвидация
                         .content-service__side-text 
                             p В случае управления бизнесом управляющие компании решают комплекс задач, направленных на достижение поставленных целей    
-            include ../common/footer                     
+            include ../common/footer     
+            include ../common/anim-side-bar                 

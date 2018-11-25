@@ -244,23 +244,44 @@
     background-image: url('../img/middle-layer.png');
     background-repeat: no-repeat;
     transform: translateY(-50px);
+
+    @include laptop {
+        background-image: none;
+    }
 }
 
 .content-service__left-side {
     width: 32%;
+
+    @include laptop {
+        width: 100%;
+    }
 }
 
 .content-service__center-side {
     width: 32%;
+
+    @include laptop {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 .content-service__right-side {
     width: 32%;
+
+    @include laptop {
+        width: 100%;
+    }
 }
 
 .content-service__general {
     display: flex;
     justify-content: space-between;
+
+    @include laptop {
+        flex-direction: column;
+    }
 }
 
 .content-service--margin-bottom {
@@ -268,7 +289,11 @@
 }
 
 .content-service__center-block {
-    padding: 75px 40px;
+    padding: 20px 40px;
+
+    @include laptop {
+        padding: 0;
+    }
 }
 
 .content-service__center-title {
@@ -278,6 +303,10 @@
         @include proximaRegular;
         color: #dbccad;
         line-height: 1.6;
+
+        @include laptop {
+            color: #562c36;
+        }
     }
 }
 
@@ -288,15 +317,41 @@
         font-size: 16px;
         @include proximaRegular;
         color: #9e8b8f;
+        
+        @include laptop {
+            color: #333;
+        }
     }
 }
 
 .content-service__center-heading {
+    margin-right: 20px;
 
     h3 {
         font-size: 16px;
         color: #fff;
         @include proximaRegular;
+
+        @include laptop {
+            color: #333;
+        }
+    }
+}
+
+.content-service__center-more {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+    &:hover {
+
+        .content-service__center-arrow {
+
+            img {
+                transform: translateX(20px);
+                transition: .35s ease-in-out;
+            }
+        }
     }
 }
 

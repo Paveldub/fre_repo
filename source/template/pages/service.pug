@@ -9,6 +9,8 @@ block content
       .container
         include ../common/_header
         nav.nav 
+          .burger-menu 
+            img(src="/assets/img/burger.png")
           ul.nav__list 
             li.nav__item 
               a(href="#").nav__link О Компании  
@@ -111,4 +113,5 @@ block content
                   #checkboxInputError  
                 .button-submit
                   button(type="submit").button-submit--width Отправить    
-          include ../common/footer        
+          include ../common/footer    
+          include ../common/anim-side-bar     

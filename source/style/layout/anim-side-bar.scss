@@ -1,0 +1,44 @@
+.anim-side-bar  {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #562c36;;
+    transition: width .7s;
+    overflow-x: hidden;
+    padding-top: 60px;
+
+    &__item {
+        flex-direction: column;
+        padding: 18px 30px;
+        font-size: 30px;
+        text-decoration: none;
+        color: #ccc;
+        background-color: #562c36;;
+        border-top: 1px solid #ccc;
+        width: 100%;
+
+        a {
+            font-family: ProximaBold;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+    }
+
+    &--active {
+        width: 250px;
+    }
+}
+
+.close-elem {
+    position: absolute;
+    top: 8px;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 30px;
+    color: #fff;
+}

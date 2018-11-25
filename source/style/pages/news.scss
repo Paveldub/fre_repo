@@ -74,7 +74,7 @@
         text-decoration: none;
         @include proximaRegular;
         background: #562c37;
-        width: 15%;
+        width: 166px;
         transition: color .35s ease-in-out, background .35s ease-in-out;
 
         &:hover {
@@ -104,6 +104,11 @@
         display: flex;
         align-items: center;
 
+        @include tablets {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
         a {
             color: #fff;
             @include proximaBold;
@@ -126,6 +131,11 @@
         display: flex;
         align-items: center;
 
+        @include tablets {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
         h4 {
             color: #fff;
             @include proximaBold;
@@ -145,18 +155,40 @@
     }
 
     &__left {
-        width: 60%;
+        width: 70%;
         display: flex;
         justify-content: space-between;
+
+        @include laptop {
+            width: 100%;
+        }
+
+        @include tablets {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__center-logo {
+        @include tablets {
+           text-align: center;
+           margin-bottom: 30px;
+        }
     }
 
     &__right {
-        width: 40%;
+        width: 30%;
+
+        @include laptop {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__bottom {
         width: 100%;
-        background: #562c37;
+        background: #562c37; 
     }
 
     &__wrapper  {
@@ -164,15 +196,31 @@
         justify-content: space-between;
         padding-top: 20px;
         padding-bottom: 20px;
+
+        @include laptop {
+            flex-direction: column;
+            display: flex;
+        }
     }
 
     &__general-block {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include laptop  {
+            flex-direction: column;
+        }
     }
 
     &__title {
+
+        @include laptop {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
         h3 {
             color: #fff;
             @include proximaRegular;
@@ -181,6 +229,13 @@
     }
 
     &__conditions {
+
+        @include laptop {
+            display: flex;
+            justify-content: center;
+
+        }
+        
         a {
             color: #fff;
             @include proximaRegular;
@@ -192,4 +247,16 @@
 .social-links--position {
     display: flex;
     justify-content: flex-end;
+}
+
+.nav__list-footer {
+    display: flex;
+
+    @include laptop {
+        display: none;
+    }
+}
+
+.nav__link--changed {
+    padding: 25px 0;
 }

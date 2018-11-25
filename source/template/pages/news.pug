@@ -5,11 +5,13 @@ block variables
 
 block content
   .wrapper 
-    section.section.contacts 
+    section.section.hero
       .container
         include ../common/_header
         nav.nav 
-          ul.nav__list 
+          .burger-menu 
+            img(src="/assets/img/burger.png")
+          ul.nav__list
             li.nav__item 
               a(href="#").nav__link О Компании  
             li.nav__item 
@@ -105,21 +107,21 @@ block content
             .footer-another__top
               .container
                     nav.nav 
-                        ul.nav__list 
+                        ul.nav__list-footer 
                             li.nav__item.nav__item--width.nav__item--border-left
-                              a(href="#").nav__link О Компании  
+                              a(href="#").nav__link.nav__link--changed О Компании  
                             li.nav__item.nav__item--width 
-                              a(href="#").nav__link Услуги 
+                              a(href="#").nav__link.nav__link--changed Услуги 
                             li.nav__item.nav__item--width
-                              a(href="#").nav__link Гарантии
+                              a(href="#").nav__link.nav__link--changed Гарантии
                             li.nav__item.nav__item--width 
-                              a(href="#").nav__link FAQ
+                              a(href="#").nav__link.nav__link--changed FAQ
                             li.nav__item.nav__item--width 
-                              a(href="#").nav__link Новости
+                              a(href="#").nav__link.nav__link--changed Новости
                             li.nav__item.nav__item--width 
-                              a(href="#").nav__link Проекты 
+                              a(href="#").nav__link.nav__link--changed Проекты 
                             li.nav__item.nav__item--width.nav__item--border-right
-                              a(href="#").nav__link Контакты
+                              a(href="#").nav__link.nav__link--changed Контакты
             .footer-another__center
               .container
                 .footer-another__general-block
@@ -152,5 +154,6 @@ block content
                     h3 © Фонд, Инвестиции, Все материалы данного сайта являются объектами авторского права
                   .footer-another__conditions
                     a(href="#") Условия, правила и оговорки 
+        include ../common/anim-side-bar             
 
 

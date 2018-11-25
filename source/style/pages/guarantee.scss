@@ -21,6 +21,10 @@
             align-items: center;
             @include proximaRegular;
 
+            @include phones {
+                font-size: 11px;
+            }
+
             &:after {
                 content: '/';
                 display: block;
@@ -36,6 +40,10 @@
             font-size: 16px;
             color: #562c36;
             @include proximaRegular;
+            
+            @include phones {
+                font-size: 11px;
+            }
         }
     }
 }
@@ -49,25 +57,27 @@
             font-size: 80px;
             @include proximaBold;
             color: #562c36;
+
+            @include phones {
+                font-size: 60px;
+            }
         }
     }
 
     &__left {
         width: 49%;
+
+        @include laptop {
+            width: 100%;
+            margin-bottom: 50px;
+        }
     }
 
     &__right {
         width: 49%;
-    }
 
-    &__right-side {
-        width: 50%;
-        margin-left: 70px;
-
-        h3 {
-            font-size: 24px;
-            @include proximaBold;
-            color: #562c36;
+        @include laptop {
+            width: 100%;
         }
     }
 
@@ -75,10 +85,18 @@
         width: 50%;
         margin-left: 70px;
 
+        @include phones {
+            margin-left: 20px;
+        }
+
         h3 {
             font-size: 24px;
             @include proximaBold;
             color: #562c36;
+
+            @include phones {
+                font-size: 16px;
+            }
         }
     }
 
@@ -118,6 +136,10 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 285px;
+
+        @include laptop {
+            flex-direction: column;
+        }
     }
 
     &__right-wrapper {
@@ -131,6 +153,12 @@
         img {
             width: 133px;
             height: 144px;
+
+            @include phones {
+                width: 100px;
+                height: 100px;
+            }
         }
     }
 }
+

@@ -9,6 +9,8 @@ block content
       .container
         include ../common/_header
         nav.nav 
+          .burger-menu 
+            img(src="/assets/img/burger.png")
           ul.nav__list 
             li.nav__item.nav__item--active
               a(href="#").nav__link О Компании  
@@ -95,4 +97,5 @@ block content
                       .statistics__text 
                         h3 Лет на рынке консалтинговых услуг    
         include ../common/slider      
-        include ../common/footer                              
+        include ../common/footer    
+        include ../common/anim-side-bar                           

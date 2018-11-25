@@ -5,25 +5,29 @@ block variables
 
 block content
   .wrapper 
-    section.section.contacts 
+    section.section.hero
       .container
         include ../common/_header
         nav.nav 
-          ul.nav__list 
-            li.nav__item 
-              a(href="#").nav__link О Компании  
-            li.nav__item 
-              a(href="#").nav__link Услуги 
-            li.nav__item
-              a(href="#").nav__link Гарантии
-            li.nav__item 
-              a(href="#").nav__link FAQ
-            li.nav__item 
-              a(href="#").nav__link Новости
-            li.nav__item 
-              a(href="#").nav__link Проекты 
-            li.nav__item.nav__item--active
-              a(href="#").nav__link Контакты
+            .burger-menu 
+                img(src="/assets/img/burger.png")
+            ul.nav__list 
+                .burger-menu 
+                    img(src="/assets/img/burger.png")
+                li.nav__item 
+                    a(href="#").nav__link О Компании  
+                li.nav__item 
+                    a(href="#").nav__link Услуги 
+                li.nav__item
+                    a(href="#").nav__link Гарантии
+                li.nav__item 
+                    a(href="#").nav__link FAQ
+                li.nav__item 
+                    a(href="#").nav__link Новости
+                li.nav__item 
+                    a(href="#").nav__link Проекты 
+                li.nav__item.nav__item--active
+                    a(href="#").nav__link Контакты
         .breadcrumbs 
             ul.breadcrumbs__list 
                 li.breadcrumbs__item 
@@ -69,13 +73,27 @@ block content
                             h6 10:00 - 15:00  
                         li.contacts__block-elem-item
                             h3 вс: 
-                            h2 выходной <br> без перерыва            
-                .contacts__block-elem
+                            h2 выходной <br> без перерыва  
+                .social-links.social-links--responsive 
+                    ul.social-links__list 
+                        li.social-links__item 
+                            a(href="#").social-links__item-url 
+                                i.fa.fa-facebook(aria-hidden="true") 
+                        li.social-links__item 
+                            a(href="#").social-links__item-url  
+                                i.fa.fa-youtube(aria-hidden="true")
+                        li.social-links__item 
+                            a(href="#").social-links__item-url  
+                                i.fa.fa-instagram
+                        li.social-links__item 
+                            a(href="#").social-links__item-url  
+                                i.fa.fa-vk(aria-hidden="true")                       
+                .contacts__block-elem.contacts__block-elem--position
                     .contacts__block-elem-link#print
                         a(href="#") Распечатать карту
                     .contacts__block-elem-link.contacts__block-elem-link--color#feedback    
-                        a(href="#") обратная связь
-            .social-links 
+                        a(href="#") обратная связь        
+            .social-links.social-links--display 
                 ul.social-links__list 
                     li.social-links__item 
                         a(href="#").social-links__item-url 
@@ -97,7 +115,9 @@ block content
                   h3 © Фонд, Инвестиции, Все материалы данного сайта являются объектами авторского права
                 .footer__conditions
                   a(href="#") Условия, правила и оговорки
-    include ../common/feedback-popup               
+    include ../common/feedback-popup  
+    include ../common/anim-side-bar   
+           
                     
 
      
